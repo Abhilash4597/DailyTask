@@ -16,8 +16,8 @@ body {
   width: 100%;
   height: auto;
   min-height: 500px;
-  max-width: 500px;
-  min-width: 250px;
+  max-width: 800px;
+  min-width: 500px;
   background: #f1f5f8;
   background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
   background-size: 25px 25px;
@@ -52,7 +52,7 @@ body {
   border-bottom: dashed 3px #fdcb6e;
   font-family: 'Architects Daughter', cursive;
   font-size: 1rem;
-  color: hsla(260, 2%, 25%, 0.7);
+  color: rgba(63, 62, 65, 0.7);
   width: 70%;
   margin-bottom: 20px;
 }
@@ -65,6 +65,7 @@ button {
   padding-bottom: 3px;
   border-radius: 5px;
   background-color: #ffeaa7;
+  cursor: pointer;
 }
 button span {
   background: #f1f5f8;
@@ -75,7 +76,14 @@ button span {
 }
 
 li {
-  text-align: left;
-  position: relative;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
+}
+
+span i{
+  cursor: pointer;
+  margin-left: 15px;
 }
